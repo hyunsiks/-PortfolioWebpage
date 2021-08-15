@@ -1,0 +1,230 @@
+
+/***1번박스***/
+.cube, .cube2, .cube3, .cube4, .cube5, .cube6, .cube7{
+    z-index: 2;
+    top: 75%;
+    height: 65px;
+    width: 65px;
+    position: relative;
+    line-height: 100px;
+    transform-style: preserve-3d;
+}
+.cube div{
+    pointer-events: none;
+    user-select: none;
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+    background-image: url("./assets/image/자바로고.png");
+    border: solid 2px white;
+    background-size: cover;
+    object-fit: cover;
+
+}
+.topbox{
+    top: -34px;
+    left: 0px;
+    transform: rotateX(90deg);
+}
+.bottombox{
+    bottom: -37px;
+    left: 0px;
+    transform: rotateX(-90deg);
+
+}
+.frontbox{
+    top: 0px;
+    left: 0px;
+    transform: translateZ(34px);
+}
+.backbox{
+    top: 0px;
+    left: 0px;
+    transform: translateZ(-34px);
+}
+.rightbox{
+    top: 0px;
+    right: -38px;
+    transform: rotateY(90deg);
+}
+.leftbox{
+    top: 0px;
+    left: -34.6px;
+    transform: rotateY(-90deg);
+}
+@keyframes rotateBox{
+    /*to는  즉 0 to 360이다*/
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+/***2번박스***/
+.cube2 div{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+
+    background-image: url("./assets/image/오라클로고.png");
+    border: solid 2px plum;
+    background-size: cover;
+    object-fit: cover;
+}
+
+@keyframes rotateBox2{
+    /*to는  즉 0 to 360이다*/
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+/***3번박스***/
+.cube3 div{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+
+    background-image: url("./assets/image/html로고.png");
+    border: solid 2px orangered;
+    background-size: cover;
+    object-fit: cover;
+}
+
+@keyframes rotateBox3{
+    /*to는  즉 0 to 360이다*/
+
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+/***4번박스***/
+.cube4 div{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+
+    background-image: url("./assets/image/css로고.png");
+    border: solid 2px skyblue;
+    background-size: cover;
+    object-fit: cover;
+}
+
+@keyframes rotateBox4{
+    /*to는  즉 0 to 360이다*/
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+/***5번박스***/
+.cube5 div{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+
+    background-image: url("./assets/image/자바스크립트로고.png");
+    border: solid 2px yellow;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+@keyframes rotateBox5{
+
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+
+/***6번박스***/
+.cube6 div{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+
+    background-image: url("./assets/image/스프링로고.png");
+    border: solid 2px green;
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+
+@keyframes rotateBox6{
+
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+
+/***7번박스***/
+.cube7 div{
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    text-align: center;
+
+    background-image: url("./assets/image/부트스트랩로고.png");
+    border: solid 2px purple;
+    background-size: cover;
+    object-fit: cover;
+}
+
+@keyframes rotateBox7{
+    50%{
+        transform: translateY(-300px) rotateX(-720deg) rotateY(-720deg);
+    }
+    100%{
+        transform:  translateY(0px) rotateX(0deg) rotateY(0deg);
+    }
+}
+
+
+.mouseoverBoxes{
+    box-shadow: 0 0 5px rgba(105, 105, 105, 0.829) inset,
+    0 0 15px rgba(143, 143, 143, 0.829) inset,   
+    0 0 30px rgba(255, 255, 255, 0.856) inset;
+}
+
+.clickingBoxes{animation: rotateBox 15s infinite linear;}
+
+.logocube, .logocube2, .logocube3, .logocube4, .logocube5, .logocube6, .logocube7{
+    background-image: url("./assets/image/자바로고.png");
+    background-size: contain;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.logocube{ background-image: url("./assets/image/자바로고.png");}
+.logocube2{ background-image: url("./assets/image/오라클로고.png");}
+.logocube3{background-image: url("./assets/image/html로고.png");}
+.logocube4{background-image: url("./assets/image/css로고.png");}
+.logocube5{background-image: url("./assets/image/자바스크립트로고.png");}
+.logocube6{background-image: url("./assets/image/스프링로고.png");}
+.logocube7{background-image: url("./assets/image/부트스트랩로고.png");}
