@@ -40,6 +40,14 @@ function init(delayTime) {
 function choice(e){
    
     let dargetValue = e.target.dataset.value;
+    
+    //현재의 vh값을 계산하기
+    const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    window.scrollTo( 0, vh*2 );
+
+    //바디의 스크롤 히든처리
+    document.body.style.overflowY = "hidden";
+    
     const popup = document.getElementsByClassName('popup');
     const bgForScroll = document.querySelector('.bgForScroll');
     // const bottomPopupContent = document.querySelector('.bottomPopupContent');

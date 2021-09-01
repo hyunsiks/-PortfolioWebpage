@@ -225,6 +225,35 @@ function boxesClick(e){
     
 }
 
+//2번째 프레임 깃으로 이동 이벤트처리
+frame2Main.addEventListener('mouseover', checkGoGit);
+frame2Main.addEventListener('mouseout', deleteGoGit);
+frame2Main.addEventListener('click', flyingBoxGit);
+function checkGoGit(e){
+    if(e.target.classList.length ==2){
+        document.querySelector('.GoingToGitMessage').style.display = "block";
+    }
+}
+function deleteGoGit(e){
+    document.querySelector('.GoingToGitMessage').style.display = "none";
+}
+function flyingBoxGit(e){
+    console.log(e.target.classList[1]);
+    if(e.target.classList[1] == "logocube"){
+        window.open('https://github.com/hyunsiks/myJava', '_blank');
+    }else if(e.target.classList[1] == "logocube2"){
+        window.open('https://github.com/hyunsiks/mySQL', '_blank');
+    }else if(e.target.classList[1] == "logocube3"){
+        window.open('https://github.com/hyunsiks/myHTML_CSS', '_blank');
+    }else if(e.target.classList[1] == "logocube4"){
+        window.open('https://github.com/hyunsiks/myHTML_CSS', '_blank');
+    }else if(e.target.classList[1] == "logocube5"){
+        window.open('https://github.com/hyunsiks/myJavaScript', '_blank');
+    }else if(e.target.classList[1] == "logocube6"){
+        window.open('https://github.com/hyunsiks/mySpring', '_blank');
+    }
+}
+
 function setup(){
     resize();
     draw();
@@ -615,4 +644,5 @@ function outlinedClick(){
         popup[i].style.display = 'none';
     }
     document.querySelector('.bgForScroll').style.display = 'none';
+    document.body.style.overflowY = "scroll";
 }

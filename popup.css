@@ -29,7 +29,7 @@
     top: 0;
     width: 90%;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 40px;
     color: white;
     font-size: 1rem;
     font-family: 'Jua', sans-serif;
@@ -83,4 +83,52 @@
     height: 99%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+.gitBox{
+    width: 300px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 20% auto;
+    align-items: center;
+}
+.gitBox > :nth-child(2){
+    text-decoration: underline;
+    color: coral;
+}
+.gitlogo{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/image/gitlogo.png);
+    background-size: cover;
+    animation: 2s gitAnimation infinite;
+}
+.gitlogo:hover {
+
+    cursor: pointer;
+    animation: 2s gitHoverAnimation infinite;
+    box-shadow: 0 0 5px rgba(238, 68, 68, 0.829) inset,
+        0 0 15px rgba(168, 73, 73, 0.829) inset,   
+        0 0 30px rgba(133, 84, 84, 0.856) inset,
+        0 0 5px rgba(43, 33, 33, 0.952);
+}
+@keyframes gitAnimation{
+    50%{
+        box-shadow: 0 0 5px rgba(105, 105, 105, 0.829) inset,
+        0 0 15px rgba(143, 143, 143, 0.829) inset,   
+        0 0 30px rgba(255, 255, 255, 0.856) inset,
+        0 0 5px rgba(255, 255, 255, 0.952);
+    }100%{
+
+    }
+}
+@keyframes gitHoverAnimation{
+    50%{
+        box-shadow: 0 0 5px rgba(238, 68, 68, 0.829) inset,
+        0 0 15px rgba(168, 73, 73, 0.829) inset,   
+        0 0 30px rgba(133, 84, 84, 0.856) inset,
+        0 0 5px rgba(43, 33, 33, 0.952);
+    }100%{
+
+    }
 }

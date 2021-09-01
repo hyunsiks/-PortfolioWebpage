@@ -188,6 +188,22 @@ canvas{
     left: calc(50% - 125px);
 }
 
+.GoingToGitMessage{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    width: 260px;
+    height: 27px;
+    background-color: rgba(226, 71, 71, 0.3);
+    left: calc(50% - 130px);
+    top: calc(25% - 13px);
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+}
+.frame2Main:hover{
+    cursor: pointer;
+}
 /*****************************
     ※세번째 세션
 *****************************/
