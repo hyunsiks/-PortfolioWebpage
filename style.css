@@ -431,7 +431,7 @@ box-shadow: inset 0px 0px 5px white;
 .myInfoValue{
     pointer-events: none;
     font-size: 1.4vw;
-    margin-top: 0;
+    margin-top: -10px;
 }
 
 .footer{

@@ -2,8 +2,8 @@
 var radius = 340;
 var autoRotate = true;
 var rotateSpeed = -60;
-var imgWidth = 190;
-var imgHeight = 140; 
+var imgWidth = 250;
+var imgHeight = 190; 
 
 var odrag = document.getElementById('drag');
 var ospin = document.getElementById('spin');
@@ -55,7 +55,7 @@ function choice(e){
     if(dargetValue == 1){
         popup[0].style.display = 'inline-block';
         bgForScroll.style.display = 'inline-block';
-        bottomPopupContent[0].style.height = '3800px';
+        bottomPopupContent[0].style.height = '3200px';
     }else if(dargetValue == 2){
  
         popup[1].style.display = 'inline-block';
@@ -68,7 +68,7 @@ function choice(e){
     }else if(dargetValue == 4){
         popup[3].style.display = 'inline-block';
         bgForScroll.style.display = 'inline-block';
-        bottomPopupContent[3].style.height = '700px';
+        bottomPopupContent[3].style.height = '3800px';
     }else if(dargetValue == 5){
         popup[4].style.display = 'inline-block';
         bgForScroll.style.display = 'inline-block';

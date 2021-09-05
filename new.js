@@ -39,7 +39,9 @@ const cm = {
         new Hill('rgb(40,40,60)', 0.2, 15),
         new Hill('rgb(140,140,180', 0.5, 10),
         new Hill('rgb(215,215,235)', 1.4, 6),
-    ]
+    ],
+    nowvh :0,
+    nowvw :0
 };
 
 
@@ -520,7 +522,10 @@ function resize(){
     cm.canvas.width = cm.stageWidth*2;
     cm.canvas.height = cm.stageHeight * 2;
     cm.ctx.scale(2,2);
-
+    nowvh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+    nowvw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    console.log("nowvh : ",nowvh);
+    console.log("nowvw : ",nowvw);
     const halfLine = Math.cos(Math.PI/4) * 350;
     const clientRect = square.getBoundingClientRect();		//Element의 속성 값 반환
     const topLine = clientRect.top;

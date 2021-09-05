@@ -48,7 +48,6 @@
     margin: auto;
     width: 99%;
     height: 90%;
-    display: block;
     overflow:auto;
     overflow-x: hidden;
 }
@@ -56,7 +55,7 @@
 #leftPopupImage{background-image: url(./assets/image/spinImage/project11.PNG);}
 #leftPopupImage2{background-image: url(./assets/image/spinImage/homepagemonitor.PNG);}
 #leftPopupImage3{background-image: url(./assets/image/spinImage/minimonitor.PNG);}
-#leftPopupImage4{background-image: url(./assets/image/spinImage/exchagemonitor.PNG);}
+#leftPopupImage4{background-image: url(./assets/image/spinImage/travelersMonitor.png);}
 #leftPopupImage5{background-image: url(./assets/image/spinImage/cgvmonitor.png);}
 /* #leftPopupImage6{}
 #leftPopupImage7{} */
@@ -71,13 +70,14 @@
     background-size: contain;
 }
 
+
 #projectsImage{background-image: url('./assets/image/spinImage/projects.png');}
 #homepageImage{background-image: url('./assets/image/spinImage/homepagecontent.png');}
 #miniGameImage{background-image: url('./assets/image/spinImage/Animation.gif');}
-#exchageImage{background-image: url('./assets/image/spinImage/exchangecapture.PNG');}
+#exchageImage{background-image: url('./assets/image/spinImage/travelersContent.png');}
 #cgvImage{background-image: url('./assets/image/spinImage/cgvcapture.PNG');}
 
-#projectsImage, #homepageImage, #miniGameImage, #exchageImage, #cgvImage{
+#projectsImage, #homepageImage, #miniGameImage, #exchageImage, #exchageImage2, #cgvImage{
     margin: auto;
     width: 92%;
     height: 99%;
