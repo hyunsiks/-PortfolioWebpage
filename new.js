@@ -478,10 +478,10 @@ function draw(){
         mediaTopRightY = 0; 
         mediaBottomRightY = 0; 
     
-        TopPointY = 40;
-        leftPointY = 40;
-        bottomPointY = 40;
-        rightPointY = 40;
+        TopPointY = nowvh*0.04;
+        leftPointY =nowvh*0.04;
+        bottomPointY = nowvh*0.04;
+        rightPointY = nowvh*0.04;
     }
     
     if((cm.topPoint.y +cm.yyy >= cm.leftPoint.y + TopPointY) && cm.direction ==1){
